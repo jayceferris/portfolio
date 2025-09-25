@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../style.css">
+    <head>
+        <title>PO Scraper</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
+    </head>
+    <body class="project-body">
+        <header class="static-navbar">
+            <nav class="nav">
+                <a href="../index.html" class="brand">
+                <img src="../img/initial-logo-white.png" alt="White Logo" class="logo logo-white" />
+                <img src="../img/initial-logo-black.png" alt="Black Logo" class="logo logo-black" />
+                </a>
+
+                <button class="hamburger" id="hamburger"
+                        aria-label="Open menu" aria-expanded="false"
+                        aria-controls="primary-menu">
+                ☰
+                </button>
+
+                <ul class="nav-links" id="primary-menu">
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content" style="height: 100%">
+            <div>
+                <img style="width: 15%;" src="../img/po-image-color.png" />
+                <h1>PO Scraper</h1>
+                <p style="padding: 5%;">I built a web application that automates purchase order (PO) processing by extracting key information such as the PO number, salesperson, line items, date, and company from PDF files with varying supplier formats. Using AI-powered data extraction, the app converts POs into structured JSON and streamlines entry into a client’s CRM, eliminating tedious manual work and significantly reducing errors. </p>
+            </div>
+            <div class="row-item-fs">
+                <img src="./img/upload-page.png" />
+                <div class="content-text">
+                    <h2>Technologies Used</h2>
+                    <h3>React</h3>
+                    <p>The frontend UI was built with React Native</p>
+                    <h3>Express (Node.js) & FastAPI</h3>
+                    <p>I used Express to build the main functionality of my backend. I used FastAPI to handle the raw text extraction.</p>
+                    <h3>Vector Database</h3>
+                    <p>I used Qdrant's Vector Database to store previously verified examples of various PO formats and then used them as context to get more accurate results from my PO Scraper.</p>
+                    <h3>OpenAI API</h3>
+                    <p>I used OpenAI's API to access their LLM and prompt it with the raw text, the context, and the information to be extracted.</p>
+                </div>
+            </div>
+            <div class="row-item-fs">
+                <div class="content-text">
+                    <h2>Outside the code</h2>
+                    <p>This was the first time I was given a defined problem by a company to solve. I learned a lot about matching expectations with reality, especially in the age of AI.</p>
+                    <p>Another thing I found to be extremely important was checking in with the client on a regular basis to show them progress and ensure what you are building will fulfill their needs.</p>
+                    <p>With this particular project, bridging the gap between what I was building and what the current process was to record PO data was extremely important in ensuring a more efficient process.</p>
+                </div>
+                <img src="./img/csv-output.png" />
+            </div>
+            <div class="row-item">
+                <div style="width: 60%">
+                    <h2>What I learned</h2>
+                    <p>This was my first time really interacting with an LLM through code, so I learned a lot about how important it is to give the model as much important, but concise information as possible to get the most accurate results. In my case, that meant setting up a RAG pipeline which increased the accuracy of the system immensely</p>
+                    <p>This was also the first time I had built a robust full stack application outside of school/personal projects. I learned how important it is to document everything as you go. It is often easy to throw things together in order to get it working, but in the long run it makes it much more difficult to make changes.</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact-footer">
+            <div>
+                <p style="font-size: 30px;">email: jayceferris@gmail.com || phone: 562-702-3390</p>
+            </div>
+            <div class="contact-logos">
+                <a href="https://www.linkedin.com/in/jayce-ferris">
+                    <img src="../img/linkedin-icon-white.png" />
+                </a>
+                <a href="https://github.com/jayceferris">
+                    <img src="../img/github-icon-white.png" />
+                </a>
+            </div>
+        </div>
+    </body>
+    <script src="../js/main.js"></script>
+</html>

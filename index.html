@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <title>Jayce Ferris</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
+    </head>
+    <div id="home" class="home-page">
+        <header class="navbar">
+            <nav class="nav">
+                <a href="#home" class="brand">
+                <img src="img/initial-logo-white.png" alt="White Logo" class="logo logo-white" />
+                <img src="img/initial-logo-black.png" alt="Black Logo" class="logo logo-black" />
+                </a>
+
+                <button class="hamburger" id="hamburger"
+                        aria-label="Open menu" aria-expanded="false"
+                        aria-controls="primary-menu">
+                ☰
+                </button>
+
+                <ul class="nav-links" id="primary-menu">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="home">
+            <div class="intro">
+                <div class="intro-text">
+                    <h1>Hi, I'm Jayce Ferris, a Software Developer passionate about turning ideas into code.</h1>
+                    <p>As a graduate from San Diego State University, I am constantly looking to learn and develop new skills. My passion lies in creating products that help people increase efficiency.</p>
+                </div>
+                <div class = "imageContainer">
+                    <img src="./img/blue-blue-tie.jpg">
+                </div>
+            </div>
+            <div class="blob-outer-container">
+                <div class="blob-inner-container">
+                    <div class="blob">
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio" class="portfolio">
+            <h1 class="portfolio-text" style="font-size: 80px;">Portfolio</h1>
+            <div class="portfolio-container">
+                <a href="./demeter" class="portfolio-tile">
+                    <div class="img-container">
+                        <img src="./img/demeter-logo.png" alt="Project 1" >
+                    </div>
+                    <h2>Demeter</h2>
+                    <h3>Academic Competition</h3>
+                    <h4>Refrigerator Tracking App</h4>
+                </a>
+                <a href="./po-scraper/index.html" class="portfolio-tile">
+                    <div class="img-container">
+                        <img src="img/po-image-color.png" alt="Project 2">
+                    </div>
+                    <h2>PO Scraper</h2>
+                    <h3>Contract Work</h3>
+                    <h4>AI-Powered PO Scraper</h4>
+                </a>
+                <a href="./schematic-searcher/index.html" class="portfolio-tile">
+                    <div class="img-container">
+                        <img src="img/schematic-search.png" alt="Project 3">
+                    </div>
+                    <h2>Schematic Searcher</h2>
+                    <h3>Contract Work</h3>
+                    <h4>Automated Schematic Scraper</h4>
+                </a>
+            </div>
+        </div>
+        <div id="about" class="about">
+            <div class="about-text">
+                <h3>Jayce Ferris</h3>
+                <p>I'm a graduate of SDSU's Class of 2025 and my passion is Computer Science. I enjoy building full stack applications integrating artificial intelligence and machine learning.</p>
+                <p>I currently work as a freelance developer, solving business problems to increase efficiency and automate mundane tasks.</p>
+            </div>
+            <div>
+                <img src="img/blue-polo.jpg" />
+            </div>
+        </div>
+        <div id="skills" class="skills">
+            <div>
+                <h1 style="font-size: 80px;">Skills</h1>
+            </div>
+            <div class="skill-groups">
+                <div class="ind-skill">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="ind-skill">
+                    <div>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <ul>
+                        <li>React/React Native</li>
+                        <li>Node.js(Express)</li>
+                        <li>FastAPI</li>
+                        <li>OpenAI API</li>
+                    </ul>
+                </div>
+                <div class="ind-skill">
+                    <div>
+                        <h3>Databases</h3>
+                    </div>
+                    <ul>
+                        <li>Qdrant Vector Database</li>
+                        <li>MySQL</li>
+                        <li>PostgresSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <div>
+                <h1 style="font-size: 80px;">Contact</h1>
+            </div>
+            <div>
+                <p style="font-size: 30px;">email: jayceferris@gmail.com || phone: 562-702-3390</p>
+            </div>
+            <div class="contact-logos">
+                <a href="https://www.linkedin.com/in/jayce-ferris">
+                    <img src="./img/linkedin-icon-white.png" />
+                </a>
+                <a href="https://github.com/jayceferris">
+                    <img src="./img/github-icon-white.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</html>

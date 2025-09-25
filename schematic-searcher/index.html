@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../style.css">
+    <head>
+        <title>Schematic Searcher</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
+    </head>
+    <body class="project-body">
+        <header class="static-navbar">
+            <nav class="nav">
+                <a href="../index.html" class="brand">
+                <img src="../img/initial-logo-white.png" alt="White Logo" class="logo logo-white" />
+                <img src="../img/initial-logo-black.png" alt="Black Logo" class="logo logo-black" />
+                </a>
+
+                <button class="hamburger" id="hamburger"
+                        aria-label="Open menu" aria-expanded="false"
+                        aria-controls="primary-menu">
+                ☰
+                </button>
+
+                <ul class="nav-links" id="primary-menu">
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content" style="height: 100%">
+            <div>
+                <img style="width: 15%;" src="../img/schematic-search.png" />
+                <h1>Schematic Search</h1>
+                <p style="padding: 5%;">The schematic extraction tool allows users to upload engineering drawings and automatically extracts important details into a structured format. It makes drawings searchable by attributes such as KA, KV, ways, and optional features, which saves significant time compared to manual data entry and improves both efficiency and accuracy. </p>
+            </div>
+            <div class="row-item-fs">
+                <img src="./img/search.png" />
+                <div class="content-text">
+                    <h2>Technologies Used</h2>
+                    <h3>React</h3>
+                    <p>The frontend UI was built with React Native</p>
+                    <h3>Express (Node.js) & FastAPI</h3>
+                    <p>I used Express to build the main functionality of my backend. I used FastAPI to handle the raw text extraction.</p>
+                </div>
+            </div>
+            <div class="row-item-fs">
+                <div class="content-text">
+                    <h2>Outside the code</h2>
+                    <p>I was asked on a Thursday to build this product, with a proof-of-concept due to the manufacturer by Monday. The timeline felt daunting at first, but I quickly realized it was achievable. It was my first time building an MVP and it taught me a lot about ruthless feature prioritization. I learned to focus on what proves value now and to defer everything else.</p>
+                </div>
+                <img src="./img/add.png" />
+            </div>
+            <div class="row-item-fs">
+                <div style="width: 60%">
+                    <h2>What I learned</h2>
+                    <p>The biggest lesson from this project was how easy it is to overengineer a solution. Despite the appeal of advanced AI tools, a closer look at the requirements showed that introducing AI would only add complexity and consume unnecessary resources.</p> 
+                    <p>Demonstrating that the needed functionality could be delivered with straightforward tools reinforced a key practice: start with the simplest approach, validate it, and only move to more advanced strategies if the basics aren’t enough.</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact-footer">
+            <div>
+                <p style="font-size: 30px;">email: jayceferris@gmail.com || phone: 562-702-3390</p>
+            </div>
+            <div class="contact-logos">
+                <a href="https://www.linkedin.com/in/jayce-ferris">
+                    <img src="../img/linkedin-icon-white.png" />
+                </a>
+                <a href="https://github.com/jayceferris">
+                    <img src="../img/github-icon-white.png" />
+                </a>
+            </div>
+        </div>
+    </body>
+    <script src="../js/main.js"></script>
+</html>

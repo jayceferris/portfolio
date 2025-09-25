@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../style.css">
+    <head>
+        <title>Demeter</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
+    </head>
+    <body class="project-body">
+        <header class="static-navbar">
+            <nav class="nav">
+                <a href="../index.html" class="brand">
+                <img src="../img/initial-logo-white.png" alt="White Logo" class="logo logo-white" />
+                <img src="../img/initial-logo-black.png" alt="Black Logo" class="logo logo-black" />
+                </a>
+
+                <button class="hamburger" id="hamburger"
+                        aria-label="Open menu" aria-expanded="false"
+                        aria-controls="primary-menu">
+                ☰
+                </button>
+
+                <ul class="nav-links" id="primary-menu">
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content" style="height: 100%">
+            <div>
+                <img style="width: 15%;" src="../img/demeter-logo.png" />
+                <h1>Demeter</h1>
+                <p style="padding: 5%;">A mobile app designed to help users manage the contents of their refrigerator and food storage areas effectively. Demeter simplifies inventory tracking and ensures no food goes to waste by notifying users of expiration dates and offering additional features to optimize food management.</p>
+            </div>
+            <div class="row-item">
+                <img src="./img/IMG_6896.PNG" />
+                <div class="content-text">
+                    <h2>Technologies Used</h2>
+                    <h3>React Native</h3>
+                    <p>The frontend UI was built with React Native</p>
+                    <h3>Redux</h3>
+                    <p>Majority of the state management was implemented using Redux</p>
+                    <h3>NFC Tags</h3>
+                    <p>Used as tags for tupperware/food containers, the user could look up, add, and remove food items using native NFC integration.</p>
+                </div>
+            </div>
+            <div class="row-item">
+                <div class="content-text">
+                    <h2>SDSU Social Venture Challenge</h2>
+                    <p>This app was built to compete in the 2024 SDSU Social Venture Challenge, a campus hosted competition to build products that would help solve aspects of food insecurity.</p>
+                    <p>Working in a group with two other people, I was in charge of building the app itself. </p>
+                    <p>We were selected as a semifinalist and were invited to join the Lavin Entrepreneurship Center (the on-campus startup incubator).</p>
+                </div>
+                <img src="./img/IMG_6897.PNG" />
+            </div>
+            <div class="row-item">
+                <img src="./img/IMG_6898.PNG" />
+                <div class="content-text">
+                    <h2>What I learned</h2>
+                    <p>This project was the first time I had really gone into depth with Redux. Learning how to handle state without having to pass props between components was extremely useful and made my code much cleaner</p>
+                    <p>This was also the first time I had created anything that integrated native tools. Integrating NFC opened up so many new possibilities for applications I could build in the future.</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact-footer">
+            <div>
+                <p style="font-size: 30px;">email: jayceferris@gmail.com || phone: 562-702-3390</p>
+            </div>
+            <div class="contact-logos">
+                <a href="https://www.linkedin.com/in/jayce-ferris">
+                    <img src="../img/linkedin-icon-white.png" />
+                </a>
+                <a href="https://github.com/jayceferris">
+                    <img src="../img/github-icon-white.png" />
+                </a>
+            </div>
+        </div>
+    </body>
+    <script src="../js/main.js"></script>
+</html>
